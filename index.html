@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+    <script type="text/javascript">
+         function validator(){
+            if (document.ageInput.checker.checked){
+                alert("it is checked");
+            }
+            else{
+                alert("you did not check");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="firstForm">
+        Username: <input type="text" name="username" />
+        Password: <input type="password" />
+        <input type="button" value="submit" onClick="">
+
+    </form>
+
+    <form name="ageInput">
+        Age: <input type="age" name="age" />
+        <input type="checkbox" name="checker"  />
+        <input type="button" value="submit" onClick="validator()" />
+
+
+    </form>
+
+    <script type="text/javascript">
+
+        var x = document.forms[0].length;
+        document.write(x);
+
+        var y = document.firstForm.elements[0].name;
+        document.write(y);
+        
+
+
+    </script>
+</body>
+</html>
